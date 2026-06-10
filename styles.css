@@ -614,83 +614,64 @@ p { color: var(--text-2); line-height: 1.72; }
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-bottom: 32px;
+  gap: 16px;
 }
 
 .team-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
-  padding: clamp(24px, 3.5vw, 36px);
+  padding: clamp(20px, 3vw, 32px);
   box-shadow: var(--sh-sm);
 }
 
-.team-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 11px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
+.team-photo-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  overflow: hidden;
   margin-bottom: 14px;
 }
 
-.avatar-s { background: linear-gradient(135deg, #8B9CF4 0%, #6B7CE4 100%); }
-.avatar-m { background: linear-gradient(135deg, #E8A5B8 0%, #D08898 100%); }
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.team-tag {
+  display: inline-block;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.tag-founder {
+  background: rgba(139, 156, 244, 0.12);
+  color: #6B7CE4;
+}
+
+.tag-intern {
+  background: rgba(125, 196, 160, 0.13);
+  color: #3A9E6F;
+}
 
 .team-name { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 3px; }
 
 .team-role {
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 12px;
-}
-
-.team-bio { font-size: 13.5px; color: var(--text-2); line-height: 1.65; }
-
-.interns-label {
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.interns-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  justify-content: center;
-}
-
-.intern-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  padding: 6px 13px;
-  font-size: 12.5px;
+  font-size: 11px;
   font-weight: 500;
-  color: var(--text);
-  box-shadow: var(--sh-xs);
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  margin-bottom: 10px;
 }
 
-.intern-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
+.team-bio { font-size: 13px; color: var(--text-2); line-height: 1.65; }
 
 /* ════════════════════════════════════
    COMMUNITY CARDS
