@@ -633,11 +633,11 @@ p { color: var(--text-2); line-height: 1.72; }
   margin-bottom: 14px;
 }
 
-/* Monica's photo needs a larger container (~25% bigger) */
+/* Monica's photo — enlarged container (~55% over base 72px) */
 .team-photo-wrap--lg {
-  width: 90px;
-  height: 90px;
-  border-radius: 18px;
+  width: 112px;
+  height: 112px;
+  border-radius: 22px;
 }
 
 .team-photo {
