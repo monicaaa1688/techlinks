@@ -626,18 +626,11 @@ p { color: var(--text-2); line-height: 1.72; }
 }
 
 .team-photo-wrap {
-  width: 72px;
-  height: 72px;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 14px;
-}
-
-/* Monica's photo — enlarged container (~55% over base 72px) */
-.team-photo-wrap--lg {
   width: 112px;
   height: 112px;
   border-radius: 22px;
+  overflow: hidden;
+  margin-bottom: 18px;
 }
 
 .team-photo {
@@ -648,12 +641,6 @@ p { color: var(--text-2); line-height: 1.72; }
   display: block;
   border: none;
   outline: none;
-}
-
-/* Scale up slightly to push any dark edge artifacts outside the clip area */
-.team-photo--crop {
-  transform: scale(1.12);
-  transform-origin: center top;
 }
 
 .team-tag {
